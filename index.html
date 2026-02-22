@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Minimal Todo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>TO DO LIST</h2>
+
+    <input type="text" id="taskInput" placeholder="Enter task">
+    <input type="date" id="dateInput">
+    <button onclick="addTask()">Add</button>
+
+    <div class="filters">
+      <button onclick="filterTasks('all')">All</button>
+      <button onclick="filterTasks('done')">Completed</button>
+      <button onclick="filterTasks('not')">Not Done</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

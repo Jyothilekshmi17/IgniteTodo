@@ -1,0 +1,72 @@
+body {
+  background: black;
+  color: white;
+  font-family: Arial;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.container {
+  width: 350px;
+  text-align: center;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid white;
+  background: rgb(3, 3, 3);
+  color: white;
+}
+.container > button {
+  width: 60%;
+  padding: 12px;
+  font-size: 18px;
+  margin: 15px auto;
+  display: block;
+  border: 1px solid white;
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.filters button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 8px;
+  border: 1px solid white;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.filters button.active {
+  background: white;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  border: 1px solid white;
+  padding: 8px;
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
